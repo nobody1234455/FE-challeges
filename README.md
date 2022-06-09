@@ -35,11 +35,11 @@ Users should be able to:
 
 Index page
 
-![](../images/index.png)
+![](./images/index.png)
 
 Thank you page
 
-![](../images/thank-you.png)
+![](./images/thank-you.png)
 
 ### Links
 
@@ -47,6 +47,8 @@ Thank you page
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+I download Figma design and did the markdown HTML5 to build the structure for my card. Add properties and styles to elements inside the card.
 
 ### Built with
 
@@ -66,8 +68,4 @@ Use this section to recap over some of your major learnings while working throug
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@ThihNezzy](https://www.frontendmentor.io/profile/nobody1234455)
