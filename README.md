@@ -43,7 +43,7 @@ Thank you page
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://nobody1234455.github.io/FE-challeges/html/index.html)
+- Solution URL: [Interactive Rating Component](https://nobody1234455.github.io/FE-challeges/html/index.html)
 
 ## My process
 
