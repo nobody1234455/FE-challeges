@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+    --primary: #fc7614;
+    --pure-white: #fff;
+    --light-grey: #969fad;
+    --medium-grey: #7c8798;
+    --dark-blue: #262e38;
+    --very-dark-blue: #131518;
+    --stroke: #969fad11;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    background-color: var(--very-dark-blue);
+    min-height: 100vh;
+}
+
+.attribution {
+    text-align: center;
+    color: var(--primary);
+    font-size: 2em;
+    width: 80%;
+    height: 20%;
+    padding: 3rem;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--light-grey);
+    transition: 0.2s ease;
+}
+
+.attribution a:hover {
+    color: var(--primary);
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+    animation-name: rainbow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    100%,
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    8% {
+        color: rgb(255, 127, 0);
+    }
+    16% {
+        color: rgb(255, 255, 0);
+    }
+    25% {
+        color: rgb(127, 255, 0);
+    }
+    33% {
+        color: rgb(0, 255, 0);
+    }
+    41% {
+        color: rgb(0, 255, 127);
+    }
+    50% {
+        color: rgb(0, 255, 255);
+    }
+    58% {
+        color: rgb(0, 127, 255);
+    }
+    66% {
+        color: rgb(0, 0, 255);
+    }
+    75% {
+        color: rgb(127, 0, 255);
+    }
+    83% {
+        color: rgb(255, 0, 255);
+    }
+    91% {
+        color: rgb(255, 0, 127);
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    height: 416px;
+    width: 412px;
+    border-radius: 30px;
+}
+
+.circle {
+    margin: 10% auto auto 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: var(--stroke);
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle .checked {
+    color: var(--primary);
+}
+
+h1 {
+    margin: 10% auto 0 7%;
+    color: var(--pure-white);
+    padding-bottom: 1em;
+}
+
+.card p {
+    margin: 0 auto 1% 7%;
+    color: var(--light-grey);
+    font-weight: 400;
+    padding-right: 2em;
+}
+
+.card .input {
+    display: flex;
+    width: 341px;
+    height: 51px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% auto 5% 7%;
+}
+
+input {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--stroke);
+    color: var(--light-grey);
+    box-sizing: border-box;
+    border: none;
+    transition: all 0.1s ease-out;
+    font-weight: 700;
+}
+
+input:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+input:focus {
+    background-color: var(--primary);
+    color: var(--pure-white);
+    cursor: default;
+    border: none;
+    outline: none;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    width: 341px;
+    height: 45px;
+    color: var(--pure-white);
+    text-transform: uppercase;
+    text-shadow: var(--pure-white) 1px 0px 0px;
+    letter-spacing: 3px;
+    margin: 0 auto 5% 7%;
+    border-radius: 100px;
+    border: none;
+    transition: all 0.1s ease;
+}
+
+.submit:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.submit:focus {
+    background-color: var(--pure-white);
+    color: var(--primary);
+    font-weight: 700;
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 327px;
+        height: 360px;
+    }
+}

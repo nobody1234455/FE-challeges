@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <!-- <link rel="stylesheet" href="../css/reset.css" type="text/css" /> -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+    <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+      >. Coded by <a href="#">Thih Nezzy</a>.
+    </div>
+
+    <div class="card">
+        <div class="circle">
+            <span class="fa fa-star checked fa-lg"></span>
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+            Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        </p>
+        <div class="input">
+            <input value="1" type=" checkbox " readonly />
+            <input value="2 " type=" checkbox " readonly />
+            <input value="3 " type=" checkbox " readonly />
+            <input value="4 " type=" checkbox " readonly />
+            <input value="5 " type=" checkbox " readonly />
+        </div>
+        <a class="submit" onclick="isChecked();" type="button"><span>submit</span></a
+      >
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

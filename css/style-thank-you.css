@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+    --primary: #fc7614;
+    --pure-white: #fff;
+    --light-grey: #969fad;
+    --medium-grey: #7c8798;
+    --dark-blue: #262e38;
+    --very-dark-blue: #131518;
+    --stroke: #969fad11;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    background-color: var(--very-dark-blue);
+    min-height: 100vh;
+}
+
+.attribution {
+    text-align: center;
+    color: var(--primary);
+    font-size: 2em;
+    width: 80%;
+    height: 20%;
+    padding: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    height: 416px;
+    width: 412px;
+    border-radius: 30px;
+}
+
+h1 {
+    color: var(--pure-white);
+}
+
+.card p {
+    color: var(--light-grey);
+    font-weight: 400;
+}
+
+.result {
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--stroke);
+    color: var(--primary);
+    margin: 20px auto 10px;
+    padding: 0.1em 1em;
+    border-radius: 100px;
+}
+
+.text {
+    text-align: center;
+}
+
+.text p {
+    padding: 0 2.5em 0 2.5em;
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 327px;
+        height: 360px;
+    }
+}
