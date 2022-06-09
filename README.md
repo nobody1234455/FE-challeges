@@ -55,6 +55,7 @@ I download Figma design and did the markdown HTML5 to build the structure for my
 - CSS custom properties
 - Flexbox
 - JS
+- Hosting on Github
 
 ### What I learned
 
